@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Nicolas Bastos — Desenvolvedor Full-Stack, Mobile e Games. React Native, TypeScript, Node.js, C#, Unity." />
+  <meta name="author" content="Nicolas Bastos Santos Cardoso" />
+  <title>Nicolas Bastos — Desenvolvedor de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237c5cff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>" />
+</head>
+<body>
+  <!-- Liquid glass background image -->
+  <div class="bg-aurora" aria-hidden="true">
+    <div class="bg-image"></div>
+    <div class="bg-tint"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav glass" id="nav">
+    <a href="#hero" class="nav-logo">NB<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#timeline">Trajetória</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner reveal">
+        <p class="hero-eyebrow glass-chip">Disponível para novos projetos</p>
+        <h1 class="hero-title">
+          Nicolas <span class="grad-text">Bastos</span>
+        </h1>
+        <p class="hero-role">Desenvolvedor Full-Stack · Mobile · Games</p>
+        <p class="hero-desc">
+          Construo soluções eficientes com <strong>React Native</strong>,
+          <strong>TypeScript</strong>, <strong>Node.js</strong> e <strong>C#</strong>.
+          Da interface ao backend, passando por jogos na Unity — focado em
+          boas práticas de arquitetura e produtos de alto impacto.
+        </p>
+        <div class="hero-cta">
+          <a href="#projetos" class="btn btn-primary glass">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost glass">Falar comigo</a>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ribeirão Preto, SP
+          </span>
+          <span>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2 3 6 3s6-2 6-3v-5"/></svg>
+            ADS · FATEC
+          </span>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+        <span class="mouse"></span>
+        <span class="scroll-text">scroll</span>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2 class="section-title">Sobre mim</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Desenvolvedor de software com forte base em programação
+            <strong>full-stack</strong>, <strong>mobile</strong> e
+            <strong>desenvolvimento de jogos</strong>. Estudante de Análise e
+            Desenvolvimento de Sistemas com vivência em ambientes ágeis.
+          </p>
+          <p>
+            Tenho uma trajetória pouco usual: comecei no <strong>Design de
+            Interiores</strong> e migrei para a tecnologia, o que me deu um olhar
+            apurado para <strong>usabilidade</strong> e interfaces. Hoje, unindo
+            design e código, entrego produtos que funcionam bem e são bons de usar.
+          </p>
+          <p>
+            Comprometido com o aprendizado contínuo e boas práticas de arquitetura.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat glass">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Anos codando</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Empresas / Studios</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Formações</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2 class="section-title">Competências técnicas</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Linguagens & Frameworks</h3>
+          <div class="chips">
+            <span class="chip">React Native</span>
+            <span class="chip">React.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">C#</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+        </article>
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Ferramentas & Tecnologias</h3>
+          <div class="chips">
+            <span class="chip">Expo</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Unity</span>
+          </div>
+        </article>
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.44 12.99c.02-.32.13-.62.36-.85l1.57-1.57a2.4 2.4 0 0 0 0-3.4l-1.57-1.57a1.03 1.03 0 0 1-.29-.88 2.5 2.5 0 1 0-3.21-3.21c-.28.05-.58-.06-.81-.29l-1.57-1.57a2.4 2.4 0 0 0-3.4 0L8.95 1.22c-.23.23-.34.53-.29.85a2.5 2.5 0 1 1-3.26 3.26 1.03 1.03 0 0 0-.85.29L2.98 7.19a2.4 2.4 0 0 0 0 3.4l1.57 1.57c.23.23.34.53.29.85a2.5 2.5 0 1 0 3.26 3.26c.32-.05.62.06.85.29l1.57 1.57a2.4 2.4 0 0 0 3.4 0l1.57-1.57c.23-.23.53-.34.85-.29a2.5 2.5 0 1 0 3.26-3.26 1.03 1.03 0 0 1-.85-.01z"/></svg>
+          </div>
+          <h3>Metodologias & Habilidades</h3>
+          <div class="chips">
+            <span class="chip">Scrum</span>
+            <span class="chip">Dev Web</span>
+            <span class="chip">Dev Mobile</span>
+            <span class="chip">Game Dev</span>
+            <span class="chip">Usabilidade</span>
+            <span class="chip">Pixel Art</span>
+            <span class="chip">Redes</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2 class="section-title">Trajetória</h2>
+        <p class="section-sub">Experiência profissional e formação ao longo do tempo</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Analítica -->
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-work">Trabalho</span>
+            <span class="tl-date">Out 2025 — Presente</span>
+            <h3>Desenvolvedor</h3>
+            <p class="tl-org">Analítica Gerenciadora de Dados S/A</p>
+            <p>Desenvolvimento e manutenção de aplicativos mobile e sistemas web
+              com interfaces responsivas e integração backend. Boas práticas de
+              programação, arquitetura de sistemas e controle de versão.</p>
+            <div class="chips small">
+              <span class="chip">Mobile</span><span class="chip">Web</span><span class="chip">Backend</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ara Game Studio -->
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-game">Game Dev</span>
+            <span class="tl-date">Nov 2024 — Mar 2025</span>
+            <h3>Game Developer</h3>
+            <p class="tl-org">Ara Game Studio</p>
+            <p>Desenvolvimento de jogo 2D na Unity (C#), implementando mecânicas,
+              controles e interações de mundo. Otimização de performance e testes
+              contínuos em colaboração com designers e artistas.</p>
+            <div class="chips small">
+              <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">2D</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SoulCode -->
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-edu">Formação</span>
+            <span class="tl-date">Ago 2024 — Dez 2024</span>
+            <h3>Desenvolvimento de Games (CST)</h3>
+            <p class="tl-org">SoulCode</p>
+            <p>Formação focada em desenvolvimento de jogos, mecânicas e produção.</p>
+          </div>
+        </div>
+
+        <!-- Serodonto -->
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-work">Trabalho</span>
+            <span class="tl-date">Out 2023 — Nov 2023</span>
+            <h3>Desenvolvedor Full Stack</h3>
+            <p class="tl-org">Serodonto</p>
+            <p>Desenvolvimento de aplicações web dinâmicas no front-end e back-end
+              (TypeScript e React). Metodologia ágil Scrum para entregas
+              estruturadas e colaborativas.</p>
+            <div class="chips small">
+              <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Scrum</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fundação Educandário -->
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-edu">Formação</span>
+            <span class="tl-date">Jun 2023 — Dez 2023</span>
+            <h3>Programação FullStack</h3>
+            <p class="tl-org">Fundação Educandário</p>
+            <p>Base sólida em desenvolvimento web full-stack.</p>
+          </div>
+        </div>
+
+        <!-- FATEC -->
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-edu">Formação</span>
+            <span class="tl-date">Jul 2023 — Jul 2027</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p class="tl-org">FATEC Ribeirão Preto</p>
+            <p>Graduação tecnológica em ADS — atualmente em andamento.</p>
+            <div class="chips small">
+              <span class="chip">Em curso</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reges -->
+        <div class="tl-item reveal" data-side="left">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-edu">Formação</span>
+            <span class="tl-date">Fev 2023 — Jun 2023</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p class="tl-org">Faculdade Reges</p>
+            <p>Início da jornada na graduação em tecnologia.</p>
+          </div>
+        </div>
+
+        <!-- ETEC -->
+        <div class="tl-item reveal" data-side="right">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <span class="tl-tag tag-design">Técnico</span>
+            <span class="tl-date">Jan 2020 — Dez 2022</span>
+            <h3>Técnico Integrado em Design de Interiores</h3>
+            <p class="tl-org">ETEC José Martimiano</p>
+            <p>Base em design e composição visual que hoje informa meu olhar para
+              usabilidade e interfaces.</p>
+            <div class="chips small">
+              <span class="chip">Design</span><span class="chip">UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="section-head reveal">
+        <span class="section-index">04</span>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-sub">Seleção de trabalhos e estudos no GitHub</p>
+      </div>
+
+      <!-- Featured: James Barber -->
+      <article class="featured glass reveal">
+        <div class="featured-glow"></div>
+        <div class="featured-body">
+          <span class="featured-label">
+            <svg class="ico" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            Projeto em destaque
+          </span>
+          <h3 class="featured-title">James Barber</h3>
+          <p class="featured-desc">
+            Aplicação <strong>full-stack</strong> para barbearia — sistema de
+            agendamento e gestão com frontend em <strong>TypeScript</strong> e
+            backend em <strong>Python</strong>. Arquitetura separada em
+            <code>frontend</code> e <code>backend</code>, com interface responsiva
+            e integração entre as camadas.
+          </p>
+          <div class="chips">
+            <span class="chip">TypeScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Full-Stack</span>
+          </div>
+          <div class="featured-cta">
+            <a href="https://github.com/FelipeMarques29/JamesBarber" target="_blank" rel="noopener" class="btn btn-primary glass">
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </div>
+        <div class="featured-visual">
+          <div class="mock glass">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <div class="mock-url">jamesbarber.app</div>
+            </div>
+            <div class="mock-screen">
+              <img src="assets/james.png" alt="Prévia do site James Barber — landing 'Sua aparência, nossa arte'"
+                   class="mock-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="mock-fallback" style="display:none;">
+                <span>Adicione <code>assets/james.png</code> para ver a prévia real</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Other projects grid -->
+      <div class="projects-grid">
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/InterfaceBusca_API" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang vue">Vue</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>InterfaceBusca API</h3>
+          <p>Sistema de busca de empresas com base em dados de um arquivo CSV.</p>
+        </a>
+
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/app-flutter-dart" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang dart">Dart</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>App Flutter</h3>
+          <p>Aplicativo mobile desenvolvido para a disciplina de programação mobile.</p>
+        </a>
+
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/TransformacaoDeDados" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang py">Python</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>Transformação de Dados</h3>
+          <p>Extração de dados de tabelas em PDF usando a biblioteca Tabula.</p>
+        </a>
+
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/WebScraping" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang py">Python</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>Web Scraping</h3>
+          <p>Coleta de dados na web para filtragem e download automatizado de arquivos.</p>
+        </a>
+
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/Projeto-3D-unity" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang cs">Unity</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>Projeto 3D Unity</h3>
+          <p>Experimentos e testes de jogo 3D desenvolvidos na Unity.</p>
+        </a>
+
+        <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/pong" target="_blank" rel="noopener">
+          <div class="proj-top">
+            <span class="proj-lang js">JavaScript</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <h3>Pong</h3>
+          <p>Clássico jogo Pong recriado em JavaScript puro.</p>
+        </a>
+      </div>
+
+      <div class="projects-more reveal">
+        <a href="https://github.com/NicolasBastos027?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost glass">
+          Ver todos os repositórios ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="contact-card glass reveal">
+        <div class="contact-glow"></div>
+        <span class="section-index center">05</span>
+        <h2 class="contact-title">Contato<h2>
+        <p class="contact-sub">
+          Aberto a oportunidades, freelas e colaborações. Me chama por qualquer canal.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:nicolabastos716rp@gmail.com" class="contact-link glass">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </span>
+            <span class="cl-label">Email</span>
+            <span class="cl-value">nicolabastos716rp@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-bastos/" target="_blank" rel="noopener" class="contact-link glass">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zM8 19h-3v-9h3v9zm-1.5-10.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 10.27h-3v-4.5c0-1.07-.02-2.45-1.5-2.45s-1.72 1.16-1.72 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg>
+            </span>
+            <span class="cl-label">LinkedIn</span>
+            <span class="cl-value">/nicolas-bastos</span>
+          </a>
+          <a href="https://github.com/NicolasBastos027" target="_blank" rel="noopener" class="contact-link glass">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.1c-3.34.71-4.04-1.59-4.04-1.59-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.23-3.17-.12-.3-.53-1.51.12-3.15 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 3-.4c1.02 0 2.05.13 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.65 1.64.24 2.85.12 3.15.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .31.22.68.83.56A12.04 12.04 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+            </span>
+            <span class="cl-label">GitHub</span>
+            <span class="cl-value">@NicolasBastos027</span>
+          </a>
+          <a href="https://wa.me/5516981376185?text=Ol%C3%A1%20Nicolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+             target="_blank" rel="noopener" class="contact-link glass">
+            <span class="cl-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.47 14.38c-.3-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.18-.24-.57-.48-.5-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.12-.27-.2-.57-.34zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23z"/></svg>
+            </span>
+            <span class="cl-label">WhatsApp</span>
+            <span class="cl-value">+55 16 98137-6185</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nicolas Bastos Santos Cardoso · Feito com café e código.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
