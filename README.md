@@ -115,4 +115,4 @@ Como o projeto é estático, pode ser publicado gratuitamente:
 
 ---
 
-<p align="center">Feito com café e código por Nicolas Bastos ☕</p>
+<p align="center">Feito com café e código ☕</p>
