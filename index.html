@@ -27,49 +27,87 @@
   <header class="nav glass" id="nav">
     <a href="#hero" class="nav-logo">NB<span>.</span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="#sobre">Sobre</a>
-      <a href="#skills">Skills</a>
-      <a href="#timeline">Trajetória</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+      <a href="#sobre" data-i18n="nav.about">Sobre</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#timeline" data-i18n="nav.journey">Trajetória</a>
+      <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Idioma / Language">
+        <button class="lang-btn" type="button" data-lang="pt" aria-label="Português" title="Português">
+          <svg class="flag-svg" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="28" height="20" rx="3" fill="#009b3a"/>
+            <path d="M14 3 L25 10 L14 17 L3 10 Z" fill="#ffdf00"/>
+            <circle cx="14" cy="10" r="4" fill="#002776"/>
+          </svg>
+        </button>
+        <button class="lang-btn" type="button" data-lang="en" aria-label="English" title="English">
+          <svg class="flag-svg" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><clipPath id="usClip"><rect width="28" height="20" rx="3"/></clipPath></defs>
+            <g clip-path="url(#usClip)">
+              <rect width="28" height="20" fill="#fff"/>
+              <g fill="#b22234">
+                <rect width="28" height="1.54" y="0"/>
+                <rect width="28" height="1.54" y="3.08"/>
+                <rect width="28" height="1.54" y="6.15"/>
+                <rect width="28" height="1.54" y="9.23"/>
+                <rect width="28" height="1.54" y="12.31"/>
+                <rect width="28" height="1.54" y="15.38"/>
+                <rect width="28" height="1.54" y="18.46"/>
+              </g>
+              <rect width="11.2" height="10.77" fill="#3c3b6e"/>
+              <g fill="#fff">
+                <circle cx="2" cy="2" r="0.55"/><circle cx="4.7" cy="2" r="0.55"/><circle cx="7.4" cy="2" r="0.55"/><circle cx="10.1" cy="2" r="0.55"/>
+                <circle cx="3.35" cy="3.8" r="0.55"/><circle cx="6.05" cy="3.8" r="0.55"/><circle cx="8.75" cy="3.8" r="0.55"/>
+                <circle cx="2" cy="5.6" r="0.55"/><circle cx="4.7" cy="5.6" r="0.55"/><circle cx="7.4" cy="5.6" r="0.55"/><circle cx="10.1" cy="5.6" r="0.55"/>
+                <circle cx="3.35" cy="7.4" r="0.55"/><circle cx="6.05" cy="7.4" r="0.55"/><circle cx="8.75" cy="7.4" r="0.55"/>
+                <circle cx="2" cy="9.2" r="0.55"/><circle cx="4.7" cy="9.2" r="0.55"/><circle cx="7.4" cy="9.2" r="0.55"/><circle cx="10.1" cy="9.2" r="0.55"/>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-inner reveal">
-        <p class="hero-eyebrow glass-chip">Disponível para novos projetos</p>
+        <p class="hero-eyebrow glass-chip" data-i18n="hero.eyebrow">Disponível para novos projetos</p>
         <h1 class="hero-title">
           Nicolas <span class="grad-text">Bastos</span>
         </h1>
-        <p class="hero-role">Desenvolvedor Full-Stack · Mobile · Games</p>
-        <p class="hero-desc">
+        <p class="hero-role" data-i18n="hero.role">Desenvolvedor Full-Stack · Mobile · Games</p>
+        <p class="hero-desc" data-i18n="hero.desc">
           Construo soluções eficientes com <strong>React Native</strong>,
           <strong>TypeScript</strong>, <strong>Node.js</strong> e <strong>C#</strong>.
           Da interface ao backend, passando por jogos na Unity — focado em
           boas práticas de arquitetura e produtos de alto impacto.
         </p>
         <div class="hero-cta">
-          <a href="#projetos" class="btn btn-primary glass">Ver projetos</a>
-          <a href="assets/curriculo-nicolas-bastos.pdf" download="Curriculo-Nicolas-Bastos.pdf"
+          <a href="#projetos" class="btn btn-primary glass" data-i18n="hero.viewProjects">Ver projetos</a>
+          <a id="cvBtn" href="assets/curriculo-nicolas-bastos.pdf" download="Curriculo-Nicolas-Bastos.pdf"
+             data-href-pt="assets/curriculo-nicolas-bastos.pdf" data-download-pt="Curriculo-Nicolas-Bastos.pdf"
+             data-href-en="assets/curriculo-nicolas-bastos-en.pdf" data-download-en="Nicolas-Bastos-Resume-EN.pdf"
              class="btn btn-ghost glass">
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Baixar currículo
+            <span data-i18n="hero.cv">Baixar currículo</span>
           </a>
-          <a href="#contato" class="btn btn-ghost glass">Falar comigo</a>
+          <a href="#contato" class="btn btn-ghost glass" data-i18n="hero.contact">Falar comigo</a>
         </div>
         <div class="hero-meta">
           <span>
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Ribeirão Preto, SP
+            <span data-i18n="hero.loc">Ribeirão Preto, SP</span>
           </span>
           <span>
             <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2 3 6 3s6-2 6-3v-5"/></svg>
-            ADS · FATEC
+            <span data-i18n="hero.edu">ADS · FATEC</span>
           </span>
         </div>
       </div>
@@ -83,43 +121,43 @@
     <section class="section" id="sobre">
       <div class="section-head reveal">
         <span class="section-index">01</span>
-        <h2 class="section-title">Sobre mim</h2>
+        <h2 class="section-title" data-i18n="about.title">Sobre mim</h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
+          <p data-i18n="about.p1">
             Desenvolvedor de software com forte base em programação
             <strong>full-stack</strong>, <strong>mobile</strong> e
             <strong>desenvolvimento de jogos</strong>. Estudante de Análise e
             Desenvolvimento de Sistemas com vivência em ambientes ágeis.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Tenho uma trajetória pouco usual: comecei no <strong>Design de
             Interiores</strong> e migrei para a tecnologia, o que me deu um olhar
             apurado para <strong>usabilidade</strong> e interfaces. Hoje, unindo
             design e código, entrego produtos que funcionam bem e são bons de usar.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             Comprometido com o aprendizado contínuo e boas práticas de arquitetura.
           </p>
         </div>
         <div class="about-stats reveal">
           <div class="stat glass">
             <span class="stat-num" data-count="3">0</span>
-            <span class="stat-label">Anos codando</span>
+            <span class="stat-label" data-i18n="about.stat1">Anos codando</span>
           </div>
           <div class="stat glass">
             <span class="stat-num" data-count="3">0</span>
-            <span class="stat-label">Empresas / Studios</span>
+            <span class="stat-label" data-i18n="about.stat2">Empresas / Studios</span>
           </div>
           <div class="stat glass">
             <span class="stat-num" data-count="10">0</span>
             <span class="stat-suffix">+</span>
-            <span class="stat-label">Tecnologias</span>
+            <span class="stat-label" data-i18n="about.stat3">Tecnologias</span>
           </div>
           <div class="stat glass">
             <span class="stat-num" data-count="5">0</span>
-            <span class="stat-label">Formações</span>
+            <span class="stat-label" data-i18n="about.stat4">Formações</span>
           </div>
         </div>
       </div>
@@ -129,14 +167,14 @@
     <section class="section" id="skills">
       <div class="section-head reveal">
         <span class="section-index">02</span>
-        <h2 class="section-title">Competências técnicas</h2>
+        <h2 class="section-title" data-i18n="skills.title">Competências técnicas</h2>
       </div>
       <div class="skills-grid">
         <article class="skill-card glass reveal">
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Linguagens & Frameworks</h3>
+          <h3 data-i18n="skills.card1">Linguagens & Frameworks</h3>
           <div class="chips">
             <span class="chip">React Native</span>
             <span class="chip">React.js</span>
@@ -155,7 +193,7 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <h3>Ferramentas & Tecnologias</h3>
+          <h3 data-i18n="skills.card2">Ferramentas & Tecnologias</h3>
           <div class="chips">
             <span class="chip">Expo</span>
             <span class="chip">SQL</span>
@@ -169,15 +207,15 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.44 12.99c.02-.32.13-.62.36-.85l1.57-1.57a2.4 2.4 0 0 0 0-3.4l-1.57-1.57a1.03 1.03 0 0 1-.29-.88 2.5 2.5 0 1 0-3.21-3.21c-.28.05-.58-.06-.81-.29l-1.57-1.57a2.4 2.4 0 0 0-3.4 0L8.95 1.22c-.23.23-.34.53-.29.85a2.5 2.5 0 1 1-3.26 3.26 1.03 1.03 0 0 0-.85.29L2.98 7.19a2.4 2.4 0 0 0 0 3.4l1.57 1.57c.23.23.34.53.29.85a2.5 2.5 0 1 0 3.26 3.26c.32-.05.62.06.85.29l1.57 1.57a2.4 2.4 0 0 0 3.4 0l1.57-1.57c.23-.23.53-.34.85-.29a2.5 2.5 0 1 0 3.26-3.26 1.03 1.03 0 0 1-.85-.01z"/></svg>
           </div>
-          <h3>Metodologias & Habilidades</h3>
+          <h3 data-i18n="skills.card3">Metodologias & Habilidades</h3>
           <div class="chips">
             <span class="chip">Scrum</span>
-            <span class="chip">Dev Web</span>
-            <span class="chip">Dev Mobile</span>
+            <span class="chip" data-i18n="skills.chipWebDev">Dev Web</span>
+            <span class="chip" data-i18n="skills.chipMobileDev">Dev Mobile</span>
             <span class="chip">Game Dev</span>
-            <span class="chip">Usabilidade</span>
+            <span class="chip" data-i18n="skills.chipUsability">Usabilidade</span>
             <span class="chip">Pixel Art</span>
-            <span class="chip">Redes</span>
+            <span class="chip" data-i18n="skills.chipNetworking">Redes</span>
           </div>
         </article>
       </div>
@@ -187,8 +225,8 @@
     <section class="section" id="timeline">
       <div class="section-head reveal">
         <span class="section-index">03</span>
-        <h2 class="section-title">Trajetória</h2>
-        <p class="section-sub">Experiência profissional e formação ao longo do tempo</p>
+        <h2 class="section-title" data-i18n="timeline.title">Trajetória</h2>
+        <p class="section-sub" data-i18n="timeline.sub">Experiência profissional e formação ao longo do tempo</p>
       </div>
 
       <div class="timeline">
@@ -196,11 +234,11 @@
         <div class="tl-item reveal" data-side="left">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-work">Trabalho</span>
-            <span class="tl-date">Out 2025 — Presente</span>
-            <h3>Desenvolvedor</h3>
+            <span class="tl-tag tag-work" data-i18n="tag.work">Trabalho</span>
+            <span class="tl-date" data-i18n="tl.dateAnalitica">Out 2025 — Presente</span>
+            <h3 data-i18n="tl.jobDev">Desenvolvedor</h3>
             <p class="tl-org">Analítica Gerenciadora de Dados S/A</p>
-            <p>Desenvolvimento e manutenção de aplicativos mobile e sistemas web
+            <p data-i18n="tl.pAnalitica">Desenvolvimento e manutenção de aplicativos mobile e sistemas web
               com interfaces responsivas e integração backend. Boas práticas de
               programação, arquitetura de sistemas e controle de versão.</p>
             <div class="chips small">
@@ -217,7 +255,7 @@
             <span class="tl-date">Nov 2024 — Mar 2025</span>
             <h3>Game Developer</h3>
             <p class="tl-org">Ara Game Studio</p>
-            <p>Desenvolvimento de jogo 2D na Unity (C#), implementando mecânicas,
+            <p data-i18n="tl.pAra">Desenvolvimento de jogo 2D na Unity (C#), implementando mecânicas,
               controles e interações de mundo. Otimização de performance e testes
               contínuos em colaboração com designers e artistas.</p>
             <div class="chips small">
@@ -230,11 +268,11 @@
         <div class="tl-item reveal" data-side="left">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-edu">Formação</span>
-            <span class="tl-date">Ago 2024 — Dez 2024</span>
-            <h3>Desenvolvimento de Games (CST)</h3>
+            <span class="tl-tag tag-edu" data-i18n="tag.edu">Formação</span>
+            <span class="tl-date" data-i18n="tl.dateSoul">Ago 2024 — Dez 2024</span>
+            <h3 data-i18n="tl.jobGameDev">Desenvolvimento de Games (CST)</h3>
             <p class="tl-org">SoulCode</p>
-            <p>Formação focada em desenvolvimento de jogos, mecânicas e produção.</p>
+            <p data-i18n="tl.pSoul">Formação focada em desenvolvimento de jogos, mecânicas e produção.</p>
           </div>
         </div>
 
@@ -242,11 +280,11 @@
         <div class="tl-item reveal" data-side="right">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-work">Trabalho</span>
-            <span class="tl-date">Out 2023 — Nov 2023</span>
-            <h3>Desenvolvedor Full Stack</h3>
+            <span class="tl-tag tag-work" data-i18n="tag.work">Trabalho</span>
+            <span class="tl-date" data-i18n="tl.dateSero">Out 2023 — Nov 2023</span>
+            <h3 data-i18n="tl.jobFullStack">Desenvolvedor Full Stack</h3>
             <p class="tl-org">Serodonto</p>
-            <p>Desenvolvimento de aplicações web dinâmicas no front-end e back-end
+            <p data-i18n="tl.pSero">Desenvolvimento de aplicações web dinâmicas no front-end e back-end
               (TypeScript e React). Metodologia ágil Scrum para entregas
               estruturadas e colaborativas.</p>
             <div class="chips small">
@@ -259,11 +297,11 @@
         <div class="tl-item reveal" data-side="left">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-edu">Formação</span>
-            <span class="tl-date">Jun 2023 — Dez 2023</span>
-            <h3>Programação FullStack</h3>
+            <span class="tl-tag tag-edu" data-i18n="tag.edu">Formação</span>
+            <span class="tl-date" data-i18n="tl.dateEduc">Jun 2023 — Dez 2023</span>
+            <h3 data-i18n="tl.jobFsProg">Programação FullStack</h3>
             <p class="tl-org">Fundação Educandário</p>
-            <p>Base sólida em desenvolvimento web full-stack.</p>
+            <p data-i18n="tl.pEduc">Base sólida em desenvolvimento web full-stack.</p>
           </div>
         </div>
 
@@ -271,13 +309,13 @@
         <div class="tl-item reveal" data-side="right">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-edu">Formação</span>
+            <span class="tl-tag tag-edu" data-i18n="tag.edu">Formação</span>
             <span class="tl-date">Jul 2023 — Jul 2027</span>
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <h3 data-i18n="tl.jobAds">Análise e Desenvolvimento de Sistemas</h3>
             <p class="tl-org">FATEC Ribeirão Preto</p>
-            <p>Graduação tecnológica em ADS — atualmente em andamento.</p>
+            <p data-i18n="tl.pFatec">Graduação tecnológica em ADS — atualmente em andamento.</p>
             <div class="chips small">
-              <span class="chip">Em curso</span>
+              <span class="chip" data-i18n="tl.chipInProgress">Em curso</span>
             </div>
           </div>
         </div>
@@ -286,11 +324,11 @@
         <div class="tl-item reveal" data-side="left">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-edu">Formação</span>
-            <span class="tl-date">Fev 2023 — Jun 2023</span>
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <span class="tl-tag tag-edu" data-i18n="tag.edu">Formação</span>
+            <span class="tl-date" data-i18n="tl.dateReges">Fev 2023 — Jun 2023</span>
+            <h3 data-i18n="tl.jobAds">Análise e Desenvolvimento de Sistemas</h3>
             <p class="tl-org">Faculdade Reges</p>
-            <p>Início da jornada na graduação em tecnologia.</p>
+            <p data-i18n="tl.pReges">Início da jornada na graduação em tecnologia.</p>
           </div>
         </div>
 
@@ -298,11 +336,11 @@
         <div class="tl-item reveal" data-side="right">
           <div class="tl-dot"></div>
           <div class="tl-card glass">
-            <span class="tl-tag tag-design">Técnico</span>
-            <span class="tl-date">Jan 2020 — Dez 2022</span>
-            <h3>Técnico Integrado em Design de Interiores</h3>
+            <span class="tl-tag tag-design" data-i18n="tag.tech">Técnico</span>
+            <span class="tl-date" data-i18n="tl.dateEtec">Jan 2020 — Dez 2022</span>
+            <h3 data-i18n="tl.jobInterior">Técnico Integrado em Design de Interiores</h3>
             <p class="tl-org">ETEC José Martimiano</p>
-            <p>Base em design e composição visual que hoje informa meu olhar para
+            <p data-i18n="tl.pEtec">Base em design e composição visual que hoje informa meu olhar para
               usabilidade e interfaces.</p>
             <div class="chips small">
               <span class="chip">Design</span><span class="chip">UX</span>
@@ -316,8 +354,8 @@
     <section class="section" id="projetos">
       <div class="section-head reveal">
         <span class="section-index">04</span>
-        <h2 class="section-title">Projetos</h2>
-        <p class="section-sub">Seleção de trabalhos e estudos no GitHub</p>
+        <h2 class="section-title" data-i18n="projects.title">Projetos</h2>
+        <p class="section-sub" data-i18n="projects.sub">Seleção de trabalhos e estudos no GitHub</p>
       </div>
 
       <!-- BIG Featured: TNT Party Game -->
@@ -326,15 +364,15 @@
           <img src="assets/tnt.png" alt="TNT Party Game — pódio de premiação 'Abriu, partiu celebrar'" />
           <span class="fh-badge glass">
             <svg class="ico" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            Projeto em destaque
+            <span data-i18n="fh.badge">Projeto em destaque</span>
           </span>
         </div>
         <div class="fh-body">
           <div class="fh-head">
             <h3 class="fh-title">TNT Party Game</h3>
-            <span class="fh-tag">🎮 Jogo autoral · Unity</span>
+            <span class="fh-tag" data-i18n="fh.tag">🎮 Jogo autoral · Unity</span>
           </div>
-          <p class="fh-desc">
+          <p class="fh-desc" data-i18n="fh.desc">
             <strong>Party game</strong> multiplayer local para <strong>4 jogadores</strong>
             em um universo sci-fi: cinco minigames competitivos onde os jogadores acumulam
             pontos e coletam latas de energético para se tornarem o campeão e levar o prêmio TNT.
@@ -351,7 +389,7 @@
             <span class="chip">Level Design</span>
           </div>
           <div class="featured-cta">
-            <a href="https://katheisabelle.itch.io/tnt-party-game" target="_blank" rel="noopener" class="btn btn-primary glass">
+            <a href="https://katheisabelle.itch.io/tnt-party-game" target="_blank" rel="noopener" class="btn btn-primary glass" data-i18n="fh.play">
               Jogar na itch.io ↗
             </a>
           </div>
@@ -359,7 +397,7 @@
           <div class="fh-team">
             <span class="fh-team-label">
               <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Equipe — 8 desenvolvedores
+              <span data-i18n="fh.team">Equipe — 8 desenvolvedores</span>
             </span>
             <div class="team-list">
               <a class="team-member glass" href="https://github.com/EdsonRDS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56v-2.1c-3.34.71-4.04-1.59-4.04-1.59-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.23-3.17-.12-.3-.53-1.51.12-3.15 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 3-.4c1.02 0 2.05.13 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.65 1.64.24 2.85.12 3.15.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .31.22.68.83.56A12.04 12.04 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>Edson Rodrigues</a>
@@ -381,10 +419,10 @@
         <div class="featured-body">
           <span class="featured-label">
             <svg class="ico" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            Projeto Web · Full-Stack
+            <span data-i18n="ft.label">Projeto Web · Full-Stack</span>
           </span>
           <h3 class="featured-title">James Barber</h3>
-          <p class="featured-desc">
+          <p class="featured-desc" data-i18n="ft.desc">
             Aplicação <strong>full-stack</strong> para barbearia — sistema de
             agendamento e gestão com frontend em <strong>TypeScript</strong> e
             backend em <strong>Python</strong>. Arquitetura separada em
@@ -399,7 +437,7 @@
             <span class="chip">Full-Stack</span>
           </div>
           <div class="featured-cta">
-            <a href="https://github.com/FelipeMarques29/JamesBarber" target="_blank" rel="noopener" class="btn btn-primary glass">
+            <a href="https://github.com/FelipeMarques29/JamesBarber" target="_blank" rel="noopener" class="btn btn-primary glass" data-i18n="ft.view">
               Ver no GitHub ↗
             </a>
           </div>
@@ -415,7 +453,7 @@
                    class="mock-img"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
               <div class="mock-fallback" style="display:none;">
-                <span>Adicione <code>assets/james.png</code> para ver a prévia real</span>
+                <span data-i18n="ft.fallback">Adicione <code>assets/james.png</code> para ver a prévia real</span>
               </div>
             </div>
           </div>
@@ -430,7 +468,7 @@
             <span class="proj-arrow">↗</span>
           </div>
           <h3>InterfaceBusca API</h3>
-          <p>Sistema de busca de empresas com base em dados de um arquivo CSV.</p>
+          <p data-i18n="pc.search">Sistema de busca de empresas com base em dados de um arquivo CSV.</p>
         </a>
 
         <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/app-flutter-dart" target="_blank" rel="noopener">
@@ -439,7 +477,7 @@
             <span class="proj-arrow">↗</span>
           </div>
           <h3>App Flutter</h3>
-          <p>Aplicativo mobile desenvolvido para a disciplina de programação mobile.</p>
+          <p data-i18n="pc.flutter">Aplicativo mobile desenvolvido para a disciplina de programação mobile.</p>
         </a>
 
         <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/TransformacaoDeDados" target="_blank" rel="noopener">
@@ -447,8 +485,8 @@
             <span class="proj-lang py">Python</span>
             <span class="proj-arrow">↗</span>
           </div>
-          <h3>Transformação de Dados</h3>
-          <p>Extração de dados de tabelas em PDF usando a biblioteca Tabula.</p>
+          <h3 data-i18n="pc.dataTTitle">Transformação de Dados</h3>
+          <p data-i18n="pc.dataT">Extração de dados de tabelas em PDF usando a biblioteca Tabula.</p>
         </a>
 
         <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/WebScraping" target="_blank" rel="noopener">
@@ -457,7 +495,7 @@
             <span class="proj-arrow">↗</span>
           </div>
           <h3>Web Scraping</h3>
-          <p>Coleta de dados na web para filtragem e download automatizado de arquivos.</p>
+          <p data-i18n="pc.scrap">Coleta de dados na web para filtragem e download automatizado de arquivos.</p>
         </a>
 
         <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/Projeto-3D-unity" target="_blank" rel="noopener">
@@ -465,8 +503,8 @@
             <span class="proj-lang cs">Unity</span>
             <span class="proj-arrow">↗</span>
           </div>
-          <h3>Projeto 3D Unity</h3>
-          <p>Experimentos e testes de jogo 3D desenvolvidos na Unity.</p>
+          <h3 data-i18n="pc.unity3dTitle">Projeto 3D Unity</h3>
+          <p data-i18n="pc.unity3d">Experimentos e testes de jogo 3D desenvolvidos na Unity.</p>
         </a>
 
         <a class="proj-card glass reveal" href="https://github.com/NicolasBastos027/pong" target="_blank" rel="noopener">
@@ -475,12 +513,12 @@
             <span class="proj-arrow">↗</span>
           </div>
           <h3>Pong</h3>
-          <p>Clássico jogo Pong recriado em JavaScript puro.</p>
+          <p data-i18n="pc.pong">Clássico jogo Pong recriado em JavaScript puro.</p>
         </a>
       </div>
 
       <div class="projects-more reveal">
-        <a href="https://github.com/NicolasBastos027?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost glass">
+        <a href="https://github.com/NicolasBastos027?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost glass" data-i18n="projects.all">
           Ver todos os repositórios ↗
         </a>
       </div>
@@ -491,8 +529,8 @@
       <div class="contact-card glass reveal">
         <div class="contact-glow"></div>
         <span class="section-index center">05</span>
-        <h2 class="contact-title">Contato</h2>
-        <p class="contact-sub">
+        <h2 class="contact-title" data-i18n="contact.title">Contato</h2>
+        <p class="contact-sub" data-i18n="contact.sub">
           Aberto a oportunidades, freelas e colaborações. Me chama por qualquer canal.
         </p>
         <div class="contact-links">
@@ -531,7 +569,7 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Nicolas Bastos Santos Cardoso · Feito com café e código.</p>
+    <p data-i18n="footer.text">© 2026 Nicolas Bastos Santos Cardoso · Feito com café e código.</p>
   </footer>
 
   <script src="script.js"></script>
